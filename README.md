@@ -53,8 +53,8 @@ ai-dev-community/
 
 ```bash
 # 1. リポジトリをクローン
-git clone https://github.com/your-username/ai-dev-community.git
-cd ai-dev-community
+git clone https://github.com/daideguchi/ai-forge-community.git
+cd ai-forge-community
 
 # 2. 依存関係をインストール
 pip install -r requirements.txt
@@ -65,6 +65,10 @@ python quick_start.py
 # 4. 環境設定後、Bot起動
 python start_paper_bot.py
 ```
+
+## 🌐 リポジトリ
+
+**GitHub**: https://github.com/daideguchi/ai-forge-community
 
 ## 📋 詳細セットアップ
 
