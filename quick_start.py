@@ -84,36 +84,29 @@ def check_dependencies():
 
 def show_setup_guide():
     """セットアップガイドを表示"""
-    print("\n🚀 AI Forge クイックスタートガイド")
+    print("\n🚀 AI Forge 完全セットアップガイド")
     print("=" * 50)
     
-    print("\n1️⃣  Discord Bot の作成:")
-    print("   https://discord.com/developers/applications")
-    print("   - New Application → Bot → Token をコピー")
-    print("   - OAuth2 → URL Generator → bot, applications.commands")
-    print("   - Bot Permissions: Send Messages, Use Slash Commands, Embed Links")
+    print("\n📚 詳細ガイドを参照してください:")
+    print("   📖 DISCORD_SETUP.md    - Discord完全設定手順")
+    print("   🔑 API_KEYS_SETUP.md   - 全APIキー取得方法")
+    print("   🚀 DEPLOYMENT.md       - 本番環境デプロイ")
     
-    print("\n2️⃣  Discord サーバーの準備:")
-    print("   以下のチャンネルを作成:")
-    print("   - #paper-summaries (論文要約)")
-    print("   - #code-review-queue (コードレビュー)")
-    print("   - #ai-training (AI学習)")
-    print("   - #mod-log (モデレーション)")
+    print("\n⚡ 最短セットアップ手順:")
+    print("   1. Discord Bot作成 → トークン取得")
+    print("   2. 必須チャンネル作成（#paper-summaries等）")
+    print("   3. OpenAI APIキー取得（$5チャージ推奨）")
+    print("   4. .env ファイル編集")
+    print("   5. python test_api_keys.py でテスト")
+    print("   6. python start_paper_bot.py で起動")
     
-    print("\n3️⃣  API キーの取得 (オプション):")
-    print("   - OpenAI: https://platform.openai.com/")
-    print("   - GitHub: Settings → Developer settings → Personal access tokens")
-    print("   - Google Perspective: https://developers.perspectiveapi.com/")
+    print("\n🆘 困ったときは:")
+    print("   - DISCORD_SETUP.md の完全チェックリスト")
+    print("   - python test_api_keys.py でエラー診断")
+    print("   - GitHub Issues で質問")
     
-    print("\n4️⃣  起動方法:")
-    print("   # 単体Bot起動")
-    print("   python start_paper_bot.py")
-    print("   ")
-    print("   # 全Bot起動")
-    print("   python run_all_bots.py")
-    print("   ")
-    print("   # Docker起動")
-    print("   docker-compose up -d")
+    print("\n🎯 重要：設定を飛ばすとBotは動きません！")
+    print("   一つずつ確実に実行してください。")
 
 def create_demo_data():
     """デモ用データを作成"""

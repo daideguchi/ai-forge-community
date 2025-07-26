@@ -59,16 +59,42 @@ cd ai-forge-community
 # 2. 依存関係をインストール
 pip install -r requirements.txt
 
-# 3. クイックスタート実行
+# 3. 設定ガイド確認
 python quick_start.py
 
-# 4. 環境設定後、Bot起動
+# 4. Discord & API設定（重要！）
+# 📖 DISCORD_SETUP.md - Discord完全設定
+# 🔑 API_KEYS_SETUP.md - APIキー取得
+
+# 5. 設定テスト
+python test_api_keys.py
+
+# 6. Bot起動
 python start_paper_bot.py
 ```
+
+## 📚 完全セットアップガイド
+
+| ガイド | 内容 | 必須度 |
+|--------|------|--------|
+| [✅ COMPLETE_SETUP_CHECKLIST.md](COMPLETE_SETUP_CHECKLIST.md) | **完全チェックリスト** | **必須** |
+| [📖 DISCORD_SETUP.md](DISCORD_SETUP.md) | Discord Bot作成・サーバー設定 | **必須** |
+| [🔑 API_KEYS_SETUP.md](API_KEYS_SETUP.md) | 全APIキー取得方法 | **必須** |
+| [🚀 DEPLOYMENT.md](DEPLOYMENT.md) | 本番環境デプロイ | オプション |
+| [📋 docs/step1-paper-bot.md](docs/step1-paper-bot.md) | 詳細技術解説 | 参考 |
 
 ## 🌐 リポジトリ
 
 **GitHub**: https://github.com/daideguchi/ai-forge-community
+
+## ⚠️ 重要な注意
+
+**設定を飛ばすとBotは絶対に動きません！**
+- Discord設定（チャンネル作成、Bot招待）
+- APIキー設定（OpenAI、GitHub等）
+- 環境変数設定（.envファイル）
+
+一つずつ確実に実行してください。
 
 ## 📋 詳細セットアップ
 
